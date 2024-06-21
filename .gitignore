@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+#Junk
+.DS_Store
+.vscode/
+.idea/
+
+>>>>>>> 3e2e3e9 (initial commit)
 # Logs
 logs
 *.log
@@ -5,7 +13,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
 .pnpm-debug.log*
+=======
+>>>>>>> 3e2e3e9 (initial commit)
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -42,8 +53,13 @@ build/Release
 node_modules/
 jspm_packages/
 
+<<<<<<< HEAD
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
+=======
+# TypeScript v1 declaration files
+typings/
+>>>>>>> 3e2e3e9 (initial commit)
 
 # TypeScript cache
 *.tsbuildinfo
@@ -54,9 +70,12 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+<<<<<<< HEAD
 # Optional stylelint cache
 .stylelintcache
 
+=======
+>>>>>>> 3e2e3e9 (initial commit)
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -72,6 +91,7 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+<<<<<<< HEAD
 # dotenv environment variable files
 .env
 .env.development.local
@@ -81,11 +101,21 @@ web_modules/
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+=======
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel-bundler cache (https://parceljs.org/)
+>>>>>>> 3e2e3e9 (initial commit)
 .parcel-cache
 
 # Next.js build output
 .next
+<<<<<<< HEAD
 out
+=======
+>>>>>>> 3e2e3e9 (initial commit)
 
 # Nuxt.js build / generate output
 .nuxt
@@ -93,13 +123,18 @@ dist
 
 # Gatsby files
 .cache/
+<<<<<<< HEAD
 # Comment in the public line in if your project uses Gatsby and not Next.js
+=======
+# Comment in the public line in if your project uses Gatsby and *not* Next.js
+>>>>>>> 3e2e3e9 (initial commit)
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
 # vuepress build output
 .vuepress/dist
 
+<<<<<<< HEAD
 # vuepress v2.x temp and cache directory
 .temp
 .cache
@@ -107,6 +142,8 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
+=======
+>>>>>>> 3e2e3e9 (initial commit)
 # Serverless directories
 .serverless/
 
@@ -118,6 +155,7 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
@@ -128,3 +166,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+>>>>>>> 3e2e3e9 (initial commit)
