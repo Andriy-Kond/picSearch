@@ -30,3 +30,14 @@
 .is-hidden {
   display: none;
 }
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
