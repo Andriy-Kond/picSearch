@@ -8,6 +8,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import axios from 'axios';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+const InfiniteScroll = require('infinite-scroll');
+
 const BASE_URL = 'https://pixabay.com/api/';
 const BASE_KEY = '34581261-d39fcdfb48adfd850ac44b9c1';
 
@@ -28,6 +30,17 @@ const refs = {
 
 refs.searchForm.addEventListener('submit', submitForm);
 refs.loadMoreBtn.addEventListener('click', requestProcessing);
+
+let infScroll = new InfiniteScroll(refs.gallery, {
+  // options...
+});
+
+var waypoint = new Waypoint({
+  element: refs.gallery,
+  handler: function () {
+    console.log('Basic waypoint triggered');
+  },
+});
 
 function submitForm(e) {
   page = 1;
@@ -122,7 +135,7 @@ function markupQueryResult(data) {
         downloads,
         largeImageURL,
       }) => {
-        return `<a href="${largeImageURL}">
+        return `<a href="${largeImageURL}" class="photo-card-link">
                   <div class="photo-card">
                     <img src="${webformatURL}" alt="${tags}" loading="lazy" height="200px"  style="width: fit-content;" />
                     <div class="info" height="200px">
