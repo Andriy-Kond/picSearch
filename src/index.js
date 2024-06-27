@@ -135,9 +135,11 @@ function markupQueryResult(data) {
         downloads,
         largeImageURL,
       }) => {
-        return `<a href="${largeImageURL}" class="photo-card-link">
-                  <div class="photo-card">
+        return `
+        <div class="photo-card">
+        <a href="${largeImageURL}" class="photo-card-link">
                     <img src="${webformatURL}" alt="${tags}" loading="lazy" height="200px"  style="width: fit-content;" />
+                    </a>
                     <div class="info" height="200px">
                       <p class="info-item">
                         <b>Likes: ${likes}</b>
@@ -153,7 +155,7 @@ function markupQueryResult(data) {
                       </p>
                     </div>
                   </div>
-                </a>`;
+                `;
       }
     )
     .join('');
